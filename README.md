@@ -9,10 +9,10 @@ Python programming language study repository.
 - Marque a opção "Add python.exe to PATH"
 - Clique em Customize installation
 - Deixe as opções marcadas como na imagem a seguir:
-(/assets/instalacao_python.png)
+!(/assets/instalacao_python.png)
 - Clique em Next
 - Deixe as opçõs marcada como na imagem a seguir:
-(/assets/instalacao_python2.png)
+!(/assets/instalacao_python2.png)
 - Clique em Install
 - Para verificar se a instalação foi um sucesso, abra o Windows PowerShell e digite python --version
 - Agora execute o Windows PowerShell como administrador
