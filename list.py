@@ -40,3 +40,38 @@ print(nomes)
 
 for indice, nome in enumerate(nomes): # Cria uma tupla com o valor do indice e o conteudo da lista
     print(indice,nome)
+
+# List Comprehension
+
+algarismos = [numero for numero in range(10)]
+
+print(algarismos)
+
+# Abaixo um exemplo de mapeamento da lista
+produtos = [
+    {'nome': 'p1', 'preco': 20},
+    {'nome': 'p2', 'preco': 10},
+    {'nome': 'p3', 'preco': 30},
+]
+
+novos_produtos = [
+    {**produto, 'preco': produto['preco'] * 1.05} if produto['preco'] > 20 else {**produto} for produto in produtos
+]
+
+print(*novos_produtos, sep='\n')
+
+# Abaixo exemplo de filtro da lista
+lista_2 = [n for n in range(10) if n < 5]
+print(lista_2)
+
+# Usando um for depois de outro for na lista
+lista_3 = []
+for x in range(3):
+    for y in range(3):
+        lista_3.append((x,y))
+
+print(lista_3)
+
+lista_4 = [ (x,y) for x in range(3) for y in range(3)]
+
+print(lista_4)
