@@ -41,3 +41,26 @@ falar_boa_noite = criar_saudacao('Boa noite')
 
 print(falar_bom_dia('Maycon'))
 print(falar_boa_noite('Maycon'))
+
+# Função Lambda
+
+lista = [
+     {'nome': 'Maycon', 'sobrenome': 'Douglas'},
+     {'nome': 'David', 'sobrenome': 'Jorge'},
+     {'nome': 'Melissa', 'sobrenome': 'Alencar'},
+     {'nome': 'Amanda', 'sobrenome': 'Pereira'}
+]
+
+def ordena(item):
+     print('ITEM:', item)
+     return item['nome']
+
+lista.sort(key=ordena)
+print(lista)
+
+# Agora vamos utilizar a função Lambda:
+
+lista.sort(key=lambda item: item['nome'])
+
+for item in lista:
+     print(item)
