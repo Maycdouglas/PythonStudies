@@ -108,3 +108,25 @@ print(pessoa_4)
 
 pessoa_4.update(nome='Maycon',peso=76)
 print(pessoa_4)
+
+#Empacotamento e Desempacotamento de Dicionário
+
+d1 = {
+    'arg1': 1,
+    'arg2': 2,
+   
+}
+
+d2 = {
+    'arg3': 3,
+    'arg4': 4,
+}
+
+d_completo = {**d1,**d2} # Desempacota os dicionarios
+
+print(d_completo)
+
+def mostrar_argumentos_nomeados(*args, **kwargs):
+    print(kwargs)
+
+mostrar_argumentos_nomeados(arg10 = 10, arg11 = 11)
