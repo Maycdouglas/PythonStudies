@@ -1,3 +1,5 @@
+import sys
+
 # Comentário em Linha
 
 """
@@ -33,7 +35,20 @@ _,nome, *resto = ['Maycon', 'Douglas', 'Henrique', 'da Silva', 'Gomes'] # os val
 
 print(_,nome,resto)
 
+# IS INSTANCE
+instancia = 'Maycon'
+print(instancia,isinstance(instancia,str)) # verifica se aquela variavel é uma instancia de uma determinada classe
 
+# GENERATOR EXPRESSION
 
+lista = [n for n in range(100)]
+generator = (n for n in range(100))
+
+print(sys.getsizeof(lista)) #Retorna o espaço ocupado pelo objeto na memória do computador
+print(sys.getsizeof(generator))
+
+print(generator)
+print(next(generator))
+# Basicamente a função pausa e só executa cada iteração quando você chama o método next. Permite não ocupar tanta memória
 
 
