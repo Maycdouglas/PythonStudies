@@ -51,4 +51,18 @@ print(generator)
 print(next(generator))
 # Basicamente a função pausa e só executa cada iteração quando você chama o método next. Permite não ocupar tanta memória
 
+# GENERATOR FUNCTION
+
+def generator(n=0):
+    yield 1 # YIELD faz pausar e retornar o valor.
+    print('Continuando')
+    yield 2
+    print('Mais uma...')
+    yield 3
+    return 'Acabou'
+
+gen = generator(n=0)
+print(next(gen)) # Para a função executar, o next deve ser usado a cada pausa
+print(next(gen))
+
 
