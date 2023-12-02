@@ -1,4 +1,5 @@
 import sys
+import meu_package
 
 # Comentário em Linha
 
@@ -82,4 +83,4 @@ g = gen2()
 for numero in g:
     print(numero)
 
-
+print(meu_package.dobra(2))
